@@ -1,0 +1,31 @@
+.banner{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/cbc86eff-9a2f-48e2-b2f3-ad72cb4aef22/NL-en-20220509-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    height: 350px;
+    color: white;
+}
+.content{
+    padding-top: 140px;
+    height: 190px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+.button{
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 00.5rem;
+    background-color: rgba(51, 51, 51, .5);
+
+
+
+
+}
