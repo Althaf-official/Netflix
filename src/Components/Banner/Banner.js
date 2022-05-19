@@ -13,9 +13,6 @@ import axios from '../../axios'
 import {API_KEY} from '../../constants/constants'
 
 
-
-
-
 function Banner() {
     //TODO:13 setState (Dynamic page) state name changed to movie 
     const [movie,setMovie] =useState()
@@ -37,7 +34,7 @@ function Banner() {
   return (
     <div className='banner'>
         <div className='content'>
-            <h1 className='title'>Movie Name</h1>
+            <h1 className='title'>{movie &&movie.title}</h1>
             <div className='banner_buttons'>
                 <button className='button'>Play</button>
                 <button className='button'>My list</button>
