@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 //TODO:5 Create style for banner.js in Banner.css
 import './Banner.css'
 
 //TODO:4 create a banner page 
 function Banner() {
+    //TODO:8 Showing data when the banner is mount
+    useEffect(()=>{
+
+    })
   return (
     <div className='banner'>
         <div className='content'>

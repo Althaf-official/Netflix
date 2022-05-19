@@ -53,3 +53,5 @@ click on >genres >try out>copy the link and pasete on postman and change api key
   5.2 for images click on >Images 
    https://developers.themoviedb.org/3/discover/movie-discover
    then click on generes and take that code and call the url 
+
+6.then npm i axios
