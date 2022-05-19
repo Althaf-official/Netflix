@@ -9,12 +9,21 @@ import './Banner.css'
 //TODO:10  IMPORT AXIOS WHICH IS I CREATED
 import axios from '../../axios'
 
+import {API_KEY} from '../../constants/constants'
+
 
 function Banner() {
     //TODO:8 Showing data when the banner is mount
     // i will call axios hear.this axios is differrent because i make coustom base url on the axios.js and call here
+    //api_key={API_KEY_HERE} so need API_KEY .i will import api key
+
+    // (`trending/all/week?api_key=${API_KEY}&language=en-US`) IF WE MAKE LIKE THIS WE CAN EDIT  "  `${API_KEY}`    "
     useEffect(()=>{
-        axios.get()
+        axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
+           // console.log(response.data);
+           //for 1st data printing 
+           console.log(response.data.results[0]);
+        })
     },[])
   return (
     <div className='banner'>
