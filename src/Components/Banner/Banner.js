@@ -1,7 +1,7 @@
 //TODO:4 create a banner page 
-
+//TODO:12 MAKE THE PAGE DYNAMIC.SO IMPORT useState
 // i want use useEffect on banner
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 //TODO:5 Create style for banner.js in Banner.css
 import './Banner.css'
@@ -9,10 +9,18 @@ import './Banner.css'
 //TODO:10  IMPORT AXIOS WHICH IS I CREATED
 import axios from '../../axios'
 
+//TODO:11 Import API KEY FOR useEffect
 import {API_KEY} from '../../constants/constants'
 
 
+
+
+
 function Banner() {
+    //TODO:13 setState (Dynamic page) state name changed to movie 
+    const [movie,setMovie] =useState()
+
+
     //TODO:8 Showing data when the banner is mount
     // i will call axios hear.this axios is differrent because i make coustom base url on the axios.js and call here
     //api_key={API_KEY_HERE} so need API_KEY .i will import api key
