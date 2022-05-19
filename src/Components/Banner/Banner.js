@@ -31,6 +31,7 @@ function Banner() {
            // console.log(response.data);
            //for 1st data printing 
            console.log(response.data.results[0]);
+           setMovie(response.data.results[0])
         })
     },[])
   return (
