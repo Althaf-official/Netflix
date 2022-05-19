@@ -10,7 +10,8 @@ import './Banner.css'
 import axios from '../../axios'
 
 //TODO:11 Import API KEY FOR useEffect
-import {API_KEY} from '../../constants/constants'
+//i will call image url here .because its come from same file
+import {API_KEY,imageUrl} from '../../constants/constants'
 
 
 function Banner() {
