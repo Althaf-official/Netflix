@@ -1,13 +1,21 @@
+//TODO:4 create a banner page 
+
+// i want use useEffect on banner
 import React, { useEffect } from 'react'
+
 //TODO:5 Create style for banner.js in Banner.css
 import './Banner.css'
 
-//TODO:4 create a banner page 
+//TODO:10  IMPORT AXIOS WHICH IS I CREATED
+import axios from '../../axios'
+
+
 function Banner() {
     //TODO:8 Showing data when the banner is mount
+    // i will call axios hear.this axios is differrent because i make coustom base url on the axios.js and call here
     useEffect(()=>{
-
-    })
+        axios.get()
+    },[])
   return (
     <div className='banner'>
         <div className='content'>
