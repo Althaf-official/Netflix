@@ -34,3 +34,22 @@ API_KEY = "YOUR API KEY"
 
 1.for fake json data:-
 https://jsonplaceholder.typicode.com/
+
+2.npm install axios
+
+//TODO:7 TAKE MOVIEDATA
+3.TMDB (The movie database)
+https://www.themoviedb.org/u/althaf271295%40gmail.com
+login>settings>API>create api>api key
+then you will get a link including your api key
+
+4.open postman
+paste the link with your api key for show the json file
+
+5.then come to https://developers.themoviedb.org/3/genres/get-movie-list
+click on >genres >try out>copy the link and pasete on postman and change api key
+5.1for taking particular type data eg:- action moive 
+  click on discover>try out >change the string number and then will generate one link .copy it and paste it on postman
+  5.2 for images click on >Images 
+   https://developers.themoviedb.org/3/discover/movie-discover
+   then click on generes and take that code and call the url 
