@@ -30,12 +30,14 @@ function Banner() {
            //for 1st data printing 
            console.log(response.data.results[0]);
            // in the console will show the object. if you click on the object it will show the details of the movie so i will copy the movie details.which part i need  copy the property then call it with the {movie.title or movie.overview etc...}
-           setMovie(response.data.results[16])
+           setMovie(response.data.results[5])
            //TODO:14 CHANGE BANNER IMAGE
         })
     },[])
   return (
-    <div className='banner'>
+    <div
+    style={{backgroundImage:`url(${movie ? imageUrl+movie.backdrop_path :""})`}}
+     className='banner'>
         <div className='content'>
             <h1 className='title'>{movie && movie.title}</h1>
             <div className='banner_buttons'>
