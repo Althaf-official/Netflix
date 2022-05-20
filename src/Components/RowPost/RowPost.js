@@ -1,11 +1,12 @@
 //TODO:14 ROW POST MAKE DYNAMIC
 import Reac,{useEffect,useState} from 'react'
-
+import axios from '../../axios'
 import './RowPost.css'
 import { useEffect } from 'react'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost() {
+    useEffect
   return (
     <div className='row'>
       <h2>Title</h2>
