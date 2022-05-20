@@ -2,7 +2,7 @@
 import React,{useEffect,useState} from 'react'
 import axios from '../../axios'
 import './RowPost.css'
-import {API_KEY,baseUrl, imageUrl} from '../../constants/constants'
+import {imageUrl} from '../../constants/constants'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost(props) {
