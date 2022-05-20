@@ -6,8 +6,10 @@ import {API_KEY} from '../../constants/constants'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost() {
+    const [movies,setMovies] = useState([])
     useEffect(()=>{
-        axios.get('discover/tv?api_key={API_KEY_HERE}&with_networks=213').then(response=>{
+        // IF YOU WANT EDIT IN THE LINK HERE SHOULD BE USE"     `   ${API_KEY}  `   "LIKE THIS
+        axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then(response=>{
             console.log(response)
         }).catch(err=>{
             alert('Network Error')
