@@ -17,7 +17,7 @@ function RowPost(props) {
            // alert('Network Error')
         })
     },[])
-    const opts: YouTubeProps['opts'] = {
+    const opts = {
         height: '390',
         width: '640',
         playerVars: {
@@ -33,7 +33,7 @@ function RowPost(props) {
               <img className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
           )}
       </div>
-      <Youtube videoId="2g811Eo7K8U"/>
+      <Youtube opts={opts} videoId="2g811Eo7K8U"/>
     </div>
   )
 }
