@@ -7,7 +7,9 @@ import { useEffect } from 'react'
 //TODO:6 now we are going to add movie poster 
 function RowPost() {
     useEffect(()=>{
-        axios.get('discover/tv?api_key={API_KEY_HERE}&with_networks=213')
+        axios.get('discover/tv?api_key={API_KEY_HERE}&with_networks=213').then(response=>{
+            console.log(response)
+        })
     })
   return (
     <div className='row'>
