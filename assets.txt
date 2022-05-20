@@ -68,7 +68,6 @@ then i come to console of my localhost:3000 port . check the id of the movie
     then i come to postman app .i paste the link from themoviedb.org there . and i chang the feild ({movie_id}/videos?api_key=<<api_key>>)
                                https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US"
 i chage movie id and API_KEY  "https://api.themoviedb.org/3/movie/440249/videos?api_key=da1bcc8de71c9f7bd69205cd3dfa5ed9&language=en-US'
-
 then you will get the json file{
     "id": 440249,
     "results": [
