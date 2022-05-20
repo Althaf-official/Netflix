@@ -1,7 +1,8 @@
 //TODO:14 ROW POST MAKE DYNAMIC
-import React from 'react'
+import Reac,{useEffect,useState} from 'react'
 
 import './RowPost.css'
+import { useEffect } from 'react'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost() {
