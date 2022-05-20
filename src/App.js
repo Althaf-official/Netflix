@@ -13,6 +13,7 @@ function App() {
       <NavBar/>
       <Banner/>
       <RowPost/>
+      <RowPost/>
       
     </div>
   );
