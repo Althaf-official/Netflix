@@ -1,3 +1,4 @@
+//TODO:14 ROW POST MAKE DYNAMIC
 import React from 'react'
 
 import './RowPost.css'
@@ -21,7 +22,7 @@ function RowPost() {
           <img className='poster' src="https://pngbackground.com/public/uploads/thumbnail/horror-tree-poster-background-for-picsart-cb-editing-11638661320psxisepqqr.jpg" alt="" />
           <img className='poster' src="https://pngbackground.com/public/uploads/thumbnail/horror-tree-poster-background-for-picsart-cb-editing-11638661320psxisepqqr.jpg" alt="" />
           <img className='poster' src="https://pngbackground.com/public/uploads/thumbnail/horror-tree-poster-background-for-picsart-cb-editing-11638661320psxisepqqr.jpg" alt="" />
-          
+
 
       </div>
     </div>
