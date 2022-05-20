@@ -55,3 +55,36 @@ click on >genres >try out>copy the link and pasete on postman and change api key
    then click on generes and take that code and call the url 
 
 6.then npm i axios
+
+7. when we click on movies poster show movie video
+i search on google- tmdb movie trailer api
+i went this link   "https://developers.themoviedb.org/3/movies/get-movie-videos"
+click on try out > then copy this link from down  "https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US"
+then i come to console of my localhost:3000 port . check the id of the movie
+             genre_ids: (3) [28, 878, 14]
+             id: 526896
+            media_type: "movie"
+            original_language: "en"
+    then i come to postman app .i paste the link from themoviedb.org there . and i chang the feild ({movie_id}/videos?api_key=<<api_key>>)
+                               https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US"
+i chage movie id and API_KEY  "https://api.themoviedb.org/3/movie/440249/videos?api_key=da1bcc8de71c9f7bd69205cd3dfa5ed9&language=en-US'
+
+then you will get the json file{
+    "id": 440249,
+    "results": [
+        {
+            "iso_639_1": "en",
+            "iso_3166_1": "US",
+            "name": "After Porn Ends 2 Official Trailer #1 (2017) Porn Documentary Movie HD",
+            "key": "T9fLBBxjAgM",
+            "site": "YouTube",
+            "size": 1080,
+            "type": "Trailer",
+            "official": false,
+            "published_at": "2017-01-23T03:03:38.000Z",
+            "id": "6039fb4c4d6791004dbe0885"
+        }
+    ]
+}
+
+then i copy this  "key": "T9fLBBxjAgM", and paste it on youtube like this  https://www.youtube.com/watch?v=T9fLBBxjAgM
