@@ -3,7 +3,7 @@ import React,{useEffect,useState} from 'react'
 import axios from '../../axios'
 import './RowPost.css'
 import {imageUrl} from '../../constants/constants'
-import YouTube from 'react-youtube'
+import Youtube from 'react-youtube'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost(props) {
@@ -17,19 +17,23 @@ function RowPost(props) {
            // alert('Network Error')
         })
     },[])
+    const opts: YouTubeProps['opts'] = {
+        height: '390',
+        width: '640',
+        playerVars: {
+          // https://developers.google.com/youtube/player_parameters
+          autoplay: 1,
+        },
+      };
   return (
     <div className='row'>
       <h2>{props.title}</h2>
       <div className='posters'>
           {movies.map((obj)=>
               <img className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
-
           )}
-          
-         
-
-
       </div>
+      <Youtube videoId="2g811Eo7K8U"/>
     </div>
   )
 }
