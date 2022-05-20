@@ -9,7 +9,7 @@ function RowPost(props) {
     const [movies,setMovies] = useState([])
     useEffect(()=>{
         // IF YOU WANT EDIT IN THE LINK HERE SHOULD BE USE"     `   ${API_KEY}  `   "LIKE THIS
-        axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then(response=>{
+        axios.get(props.url).then(response=>{
             console.log(response)
             setMovies(response.data.results)
         }).catch(err=>{
