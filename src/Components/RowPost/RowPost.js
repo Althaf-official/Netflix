@@ -2,7 +2,7 @@
 import React,{useEffect,useState} from 'react'
 import axios from '../../axios'
 import './RowPost.css'
-import {API_KEY,baseUrl} from '../../constants/constants'
+import {API_KEY,baseUrl, imageUrl} from '../../constants/constants'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost() {
@@ -21,7 +21,7 @@ function RowPost() {
       <h2>Netflix Originals</h2>
       <div className='posters'>
           {movies.map((obj)=>
-              <img className='poster' src="https://pngbackground.com/public/uploads/thumbnail/horror-tree-poster-background-for-picsart-cb-editing-11638661320psxisepqqr.jpg" alt="" />
+              <img className='poster' src={`${imageUrl+obj.backdrop_path}`} alt="" />
 
           )}
           
