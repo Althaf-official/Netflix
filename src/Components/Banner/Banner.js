@@ -34,6 +34,12 @@ function Banner() {
             //TODO:14 CHANGE BANNER IMAGE
         })
     }, [])
+
+    const handleMovie = (id) =>{
+
+    }
+
+
     return (
         <div
             style={{ backgroundImage: `url(${movie ? imageUrl + movie.backdrop_path : ""})` }}
