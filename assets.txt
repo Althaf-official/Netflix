@@ -87,3 +87,13 @@ then you will get the json file{
 }
 
 then i copy this  "key": "T9fLBBxjAgM", and paste it on youtube like this  https://www.youtube.com/watch?v=T9fLBBxjAgM
+
+
+
+npm install react-player
+
+when we click on the movie poster should open react-pleayer
+now its showing perminantly
+required to show only when we click on the poster
+
+so when i click on the poster in the console its showing a id so i will take that id using eventListner
