@@ -18,6 +18,7 @@ function RowPost(props) {
         })
     },[])
     const handleMovie = (id) =>{
+        console.log(id)
 
     }
 
