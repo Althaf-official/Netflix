@@ -17,24 +17,16 @@ function RowPost(props) {
            // alert('Network Error')
         })
     },[])
-    const opts = {
-        height: '390',
-        width: '100%',
-        playerVars: {
-          // https://developers.google.com/youtube/player_parameters
-          autoplay: 1,
 
-        },
-      };
   return (
     <div className='row'>
       <h2>{props.title}</h2>
       <div className='posters'>
           {movies.map((obj)=>
-              <img className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
+              <img  className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
           )}
       </div>  
-      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U'  width="100%" />
     </div>
   )
 }
