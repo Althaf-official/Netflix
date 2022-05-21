@@ -8,6 +8,7 @@ import ReactPlayer from 'react-player'
 //TODO:6 now we are going to add movie poster 
 function RowPost(props) {
     const [movies,setMovies] = useState([])
+    const [id,setId] = useState('')
     useEffect(()=>{
         // IF YOU WANT EDIT IN THE LINK HERE SHOULD BE USE"     `   ${API_KEY}  `   "LIKE THIS
         axios.get(props.url).then(response=>{
