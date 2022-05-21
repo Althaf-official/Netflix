@@ -2,13 +2,13 @@
 import React,{useEffect,useState} from 'react'
 import axios from '../../axios'
 import './RowPost.css'
-import {imageUrl} from '../../constants/constants'
+import {imageUrl,API_KEY} from '../../constants/constants'
 import ReactPlayer from 'react-player'
 
 //TODO:6 now we are going to add movie poster 
 function RowPost(props) {
     const [movies,setMovies] = useState([])
-    const [id,setId] = useState('')
+    const [urlid,setUrlId] = useState('')
     useEffect(()=>{
         // IF YOU WANT EDIT IN THE LINK HERE SHOULD BE USE"     `   ${API_KEY}  `   "LIKE THIS
         axios.get(props.url).then(response=>{
@@ -20,6 +20,9 @@ function RowPost(props) {
     },[])
     const handleMovie = (id) =>{
         console.log(id)
+        axios.get(`/movie/440249/videos?api_key=da1bcc8de71c9f7bd69205cd3dfa5ed9&language=en-US`).then(response=>{
+            console.log(response.data)
+        })
 
     }
 
