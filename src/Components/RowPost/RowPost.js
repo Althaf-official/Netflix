@@ -20,7 +20,7 @@ function RowPost(props) {
     },[])
     const handleMovie = (id) =>{
         console.log(id)
-        axios.get(`/movie/440249/videos?api_key=da1bcc8de71c9f7bd69205cd3dfa5ed9&language=en-US`).then(response=>{
+        axios.get(`/movie/440249/videos?api_key=${API_KEY}&language=en-US`).then(response=>{
             console.log(response.data)
         })
 
