@@ -17,13 +17,17 @@ function RowPost(props) {
            // alert('Network Error')
         })
     },[])
+    const handleMovie = (id) =>{
+
+    }
+
 
   return (
     <div className='row'>
       <h2>{props.title}</h2>
       <div className='posters'>
           {movies.map((obj)=>
-              <img  className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
+              <img onClick={()=>handleMovie(obj.id)}  className={props.isSmall ? `smallPoster`:'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="poster" />
           )}
       </div>  
       <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U'  width="100%" />

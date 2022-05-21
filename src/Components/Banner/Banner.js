@@ -35,10 +35,7 @@ function Banner() {
         })
     }, [])
 
-    const handleMovie = (id) =>{
-
-    }
-
+    
 
     return (
         <div
