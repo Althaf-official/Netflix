@@ -40,7 +40,7 @@ function RowPost(props) {
                     <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? `smallPoster` : 'poster'} src={`${imageUrl + obj.backdrop_path}`} alt="poster" />
                 )}
             </div>
-           {urlId && <ReactPlayer url={`https://www.youtube.com/watch?v=${urlId.key}`} width="100%" />}
+           {urlId && <ReactPlayer playing={true} url={`https://www.youtube.com/watch?v=${urlId.key}`} width="100%" />}
         </div>
     )
 }
