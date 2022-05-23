@@ -1,0 +1,99 @@
+netflix-logo='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png'
+
+nav-avatar='https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png'§
+
+banner='https://wallpaperaccess.com/full/2703652.png
+
+card = 'https://images.squarespace-cdn.com/content/v1/59232e19579fb3fa44a693c2/1589212826160-UM9PEPGOS3OJPR0FJ81X/ke17ZwdGBToddI8pDm48kHZUaJeKzodyg_sXWBMxNTdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxCBUU7B-_SAG1kGvCwYgmUjQXvn8_OJjtz3K1llMQBa1MPsuSXPSY3X-tgg78M7lI/SKOyqL1qFLIhbK6ho2lB-696x975.jpg?format=1500w'
+
+//////////////////////////////////////////////////////////////API's//////////////////////////////////////////////////////////////////////////
+
+imageUrl = 'https://image.tmdb.org/t/p/original'
+
+apiBaseUrl='https://api.themoviedb.org/3'
+
+trending ='https://api.themoviedb.org/3/trending/all/week?api_key={API_KEY_HERE}&language=en-US'
+
+action ='https://api.themoviedb.org/3/discover/movie?api_key={API_KEY_HERE}&with_genres=28'
+
+originals ='https://api.themoviedb.org/3/discover/tv?api_key={API_KEY_HERE}&with_networks=213'
+
+ComedyMovies: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=35',
+
+HorrorMovies: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=27',
+
+ActionMovies: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=28',
+
+RomanceMovies: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=10749',
+
+Documentaries: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=99',
+
+////////////////////////////////////////////////////////////////////API KEY////////////////////////////////////////////////////////////////////////////
+
+API_KEY = "YOUR API KEY"
+
+1.for fake json data:-
+https://jsonplaceholder.typicode.com/
+
+2.npm install axios
+
+//TODO:7 TAKE MOVIEDATA
+3.TMDB (The movie database)
+https://www.themoviedb.org/u/althaf271295%40gmail.com
+login>settings>API>create api>api key
+then you will get a link including your api key
+
+4.open postman
+paste the link with your api key for show the json file
+
+5.then come to https://developers.themoviedb.org/3/genres/get-movie-list
+click on >genres >try out>copy the link and pasete on postman and change api key
+5.1for taking particular type data eg:- action moive 
+  click on discover>try out >change the string number and then will generate one link .copy it and paste it on postman
+  5.2 for images click on >Images 
+   https://developers.themoviedb.org/3/discover/movie-discover
+   then click on generes and take that code and call the url 
+
+6.then npm i axios
+
+7. when we click on movies poster show movie video
+i search on google- tmdb movie trailer api
+i went this link   "https://developers.themoviedb.org/3/movies/get-movie-videos"
+click on try out > then copy this link from down  "https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US"
+then i come to console of my localhost:3000 port . check the id of the movie
+             genre_ids: (3) [28, 878, 14]
+             id: 526896
+            media_type: "movie"
+            original_language: "en"
+    then i come to postman app .i paste the link from themoviedb.org there . and i chang the feild ({movie_id}/videos?api_key=<<api_key>>)
+                               https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US"
+i chage movie id and API_KEY  "https://api.themoviedb.org/3/movie/440249/videos?api_key=da1bcc8de71c9f7bd69205cd3dfa5ed9&language=en-US'
+then you will get the json file{
+    "id": 440249,
+    "results": [
+        {
+            "iso_639_1": "en",
+            "iso_3166_1": "US",
+            "name": "After Porn Ends 2 Official Trailer #1 (2017) Porn Documentary Movie HD",
+            "key": "T9fLBBxjAgM",
+            "site": "YouTube",
+            "size": 1080,
+            "type": "Trailer",
+            "official": false,
+            "published_at": "2017-01-23T03:03:38.000Z",
+            "id": "6039fb4c4d6791004dbe0885"
+        }
+    ]
+}
+
+then i copy this  "key": "T9fLBBxjAgM", and paste it on youtube like this  https://www.youtube.com/watch?v=T9fLBBxjAgM
+
+
+
+npm install react-player
+
+when we click on the movie poster should open react-pleayer
+now its showing perminantly
+required to show only when we click on the poster
+
+so when i click on the poster in the console its showing a id so i will take that id using eventListner
